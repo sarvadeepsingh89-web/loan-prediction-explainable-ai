@@ -49,7 +49,7 @@ loan-pred_project/
 ## ⚙️ Installation and Setup
 
 ### 1️⃣ Clone the Repository
-git clone https://github.com/sarvadeepsingh89-web/loan-pred_project.git
+git clone https://github.com/sarvadeepsingh89-web/loan-prediction-explainable-ai.git
 cd loan-pred_project
 
 2️⃣ Create and Activate Virtual Environment
