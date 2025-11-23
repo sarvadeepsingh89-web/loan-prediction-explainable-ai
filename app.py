@@ -233,4 +233,3 @@ if st.session_state["last_cleaned_input"] is not None:
 
 # Footer
 st.markdown("---")
-st.markdown("Tip: if visual generation fails, check the `outputs_shap/` and `outputs_lime/` folders in the project root for files and error text output.")
