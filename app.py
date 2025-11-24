@@ -24,13 +24,22 @@ def load_model(path="models/loan_approval_model.pkl"):
     return joblib.load(path)
 
 def _display_image_file(path: str):
-    """Open image bytes and show in Streamlit to avoid caching problems."""
+    """Open image safely and display both locally and on Streamlit Cloud."""
+    from PIL import Image
+
     try:
-        from PIL import Image
         img = Image.open(path)
-        st.image(img, use_container_width=True)
+
+        # Try Cloud-compatible behavior (no use_container_width)
+        try:
+            st.image(img)
+        except TypeError:
+            # Local Streamlit (older version) requires use_container_width
+            st.image(img, use_container_width=True)
+
     except Exception as e:
         st.error(f"Could not open image {path}: {e}")
+
 
 def file_exists(p):
     return p is not None and Path(p).is_file()
