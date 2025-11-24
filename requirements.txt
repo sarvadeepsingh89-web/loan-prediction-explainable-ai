@@ -9,3 +9,7 @@ streamlit==1.37.1
 joblib==1.3.2
 pillow==10.2.0
 
+# Explainable AI
+shap==0.45.0
+lime==0.2.0.1
+
