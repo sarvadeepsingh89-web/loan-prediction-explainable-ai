@@ -1,3 +1,6 @@
+🚀 Live Streamlit App  
+https://loan-prediction-explainable-ai-dqvfzum7hqzyj9b42yxus4.streamlit.app/
+
 # 🏦 Loan Prediction System with Explainable AI
 
 ## 📘 Overview
